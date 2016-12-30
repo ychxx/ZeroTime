@@ -1,0 +1,121 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 通用白色分隔线 -->
+    <style name="common_white_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/common_white</item>
+    </style>
+
+    <!-- 通用标题栏风格 -->
+    <style name="common_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_title_height</item>
+    </style>
+    <!-- 通用蓝色按钮风格 -->
+    <style name="common_blue_btn">
+        <item name="android:layout_width">@dimen/login_button_width</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/btn_blue</item>
+    </style>
+
+    <!-- 通用蓝色输入框布局风格 -->
+    <style name="common_blue_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_edittext_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_edittext_padding</item>
+        <item name="android:layout_marginRight">@dimen/login_edittext_padding</item>
+        <item name="android:background">@drawable/blue</item>
+    </style>
+
+    <!-- 通用蓝色输入框风格 -->
+    <style name="common_blue_edittext">
+        <item name="android:background">@color/common_Transparent</item>
+        <item name="android:textColor">@color/common_blue</item>
+        <item name="android:textColorHint">@color/common_blue</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_edittext_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">35dp</item>
+    </style>
+    <!-- 对话框风格 -->
+    <style name="MusicDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/common_Transparent</item>
+    </style>
+    <!-- 单词页面按钮风格 -->
+    <style name="abc_button">
+        <item name="android:background">@drawable/btn_blue</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">@dimen/abc_button_height</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+    <!-- 通用返回按钮风格 -->
+    <style name="common_black_bt">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_title_left</item>
+        <item name="android:background">@drawable/break_white</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- ABC设置EditText框风格 -->
+    <style name="abc_set_edittext">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:numeric">integer</item>
+        <item name="android:text">0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_blue</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:background">@color/common_white</item>
+    </style>
+    <!-- ABC设置TextView框风格 -->
+    <style name="abc_set_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_blue</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <!-- ABC设置按钮风格 -->
+    <style name="abc_set_btn">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/btn_blue</item>
+    </style>
+
+    <!-- 下方对话框按钮风格 -->
+    <style name="BelowDialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/common_Transparent</item>
+        <item name="android:textColor">@color/common_blue</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/common_title_style"
+        android:background="@color/common_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫描音乐"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_title_size" />
+
+        <Button
+            android:id="@+id/scanmusic_break"
+            style="@style/common_black_bt" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scanmusic_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_blue"
+        android:text="开始扫描"
+        android:textColor="@color/common_white"
+        android:textSize="30dp" />
+
+</RelativeLayout>

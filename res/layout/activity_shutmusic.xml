@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray" >
+
+    <RelativeLayout
+        style="@style/common_title_style"
+        android:background="@color/common_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="定时"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_title_size" />
+
+        <Button
+            android:id="@+id/shut_break"
+            style="@style/common_black_bt" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/abc_set_textview"
+            android:text="关闭时间(分钟)：" />
+
+        <EditText
+            android:id="@+id/shut_time"
+            style="@style/abc_set_edittext"
+            android:text="5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp" >
+
+        <Button
+            android:id="@+id/shut_cancel"
+            style="@style/abc_set_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/shut_confirm"
+            style="@style/abc_set_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="确定" />
+    </RelativeLayout>
+
+</RelativeLayout>

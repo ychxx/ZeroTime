@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/my_music_title_rl"
+        style="@style/common_title_style"
+        android:background="@color/common_blue" >
+
+        <TextView
+            android:id="@+id/music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的音乐"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_title_size" />
+
+        <ImageView
+            android:id="@+id/my_music_break"
+            style="@style/common_black_bt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_music_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_blue"
+        android:layout_gravity="bottom"  >
+
+        <TextView
+            android:id="@+id/my_music_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="神的随波逐流"
+            android:textColor="@color/common_white" />
+
+        <TextView
+            android:id="@+id/my_music_song_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_music_song_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="泠鸢"
+            android:textColor="@color/common_white" />
+
+        <ImageView
+            android:id="@+id/my_music_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_s" />
+
+        <ImageView
+            android:id="@+id/my_music_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/my_music_more"
+            android:background="@drawable/main_btn_next" />
+
+        <ImageView
+            android:id="@+id/my_music_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/my_music_next"
+            android:background="@drawable/main_btn_play" />
+
+        <ImageView
+            android:id="@+id/my_music_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/my_music_play"
+            android:background="@drawable/main_btn_previous" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/music_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/my_music_bottom"
+        android:layout_below="@id/my_music_title_rl"
+        android:background="@color/common_gray" >
+    </ListView>
+
+</RelativeLayout>

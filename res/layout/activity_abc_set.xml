@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            style="@style/common_title_style"
+            android:background="@color/common_blue" >
+
+            <Button
+                android:id="@+id/abc_set_break"
+                style="@style/common_black_bt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="每日背诵：" />
+
+            <EditText
+                android:id="@+id/abc_set_num"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:gravity="center"
+                android:maxLength="3"
+                android:numeric="integer"
+                android:text="11"
+                android:textColor="@color/common_blue"
+                android:textSize="25dp" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="个" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/abc_set_t1"
+                style="@style/abc_set_textview"
+                android:text="提醒方式：" />
+
+            <RadioButton
+                android:id="@+id/abc_set_aibinhaosi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/abc_set_t1"
+                android:checked="true"
+                android:text="艾宾浩斯"
+                android:textColor="@color/common_blue"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/abc_set_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abc_set_aibinhaosi"
+                android:layout_toRightOf="@id/abc_set_t1"
+                android:text="自定义"
+                android:textColor="@color/common_blue"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第一提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day1"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours1"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes1"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第二提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day2"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours2"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes2"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第三提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day3"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours3"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes3"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第四提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day4"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours4"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes4"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第五提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day5"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours5"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes5"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第六提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day6"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours6"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes6"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第七提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day7"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours7"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes7"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="第八提醒：" />
+
+            <EditText
+                android:id="@+id/abc_set_day8"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="天" />
+
+            <EditText
+                android:id="@+id/abc_set_hours8"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="时" />
+
+            <EditText
+                android:id="@+id/abc_set_minutes8"
+                style="@style/abc_set_edittext" />
+
+            <TextView
+                style="@style/abc_set_textview"
+                android:text="分" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/abc_set_cancel"
+                style="@style/abc_set_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/abc_set_save"
+                style="@style/abc_set_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="保存" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

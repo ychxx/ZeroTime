@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/common_title_style"
+        android:background="@color/common_blue" >
+
+        <Button
+            android:id="@+id/abc_word_break"
+            style="@style/common_black_bt" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/abc_word_spelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hello"
+        android:textColor="@color/common_blue"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:id="@+id/abc_word_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abc_word_spelling"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/abc_word_alphabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="TextView"
+            android:textColor="#323232"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/abc_word_horn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/abc_word_alphabet"
+            android:src="@drawable/horn" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/abc_word_meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abc_word_ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#888888"
+        android:textSize="20dp" />
+
+     <Button
+        android:id="@+id/abc_word_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/back" /> 
+
+    <Button
+        android:id="@+id/abc_word_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/next" />
+
+</RelativeLayout>

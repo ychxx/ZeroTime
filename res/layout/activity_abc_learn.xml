@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/common_title_style"
+        android:background="@color/common_blue" >
+
+        <Button 
+            android:id="@+id/abc_learn_break"
+            style="@style/common_black_bt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/abc_learn_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

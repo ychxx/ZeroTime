@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/common_blue">
+
+        <Button 
+            android:id="@+id/main_personal"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="个人中心"
+            android:textColor="@color/common_gray"
+            android:background="@drawable/btn_blue"/>
+
+    </RelativeLayout>
+    
+    <!-- 顶部的三个tab -->
+
+    <LinearLayout
+        android:id="@+id/main_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/common_blue"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/main_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="音乐"
+                android:textColor="@color/common_white_blue_select"
+                android:background="@color/common_Transparent"
+                android:textSize="@dimen/common_title_size" />
+
+            <View
+                android:id="@+id/main_music_line"
+                style="@style/common_white_line"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_white_blue_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/main_abc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="英语"
+                android:textColor="@color/common_white_blue"
+                android:background="@color/common_Transparent" 
+                android:textSize="@dimen/common_title_size"
+                />
+
+            <View
+                android:id="@+id/main_abc_line"
+                style="@style/common_white_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/main_read"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="阅读"
+                android:textColor="@color/common_white_blue"
+                android:background="@color/common_Transparent"
+                android:textSize="@dimen/common_title_size" />
+
+            <View
+                android:id="@+id/main_read_line"
+                style="@style/common_white_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- tab下方区域 -->
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_gray" >
+    </FrameLayout>
+
+</LinearLayout>

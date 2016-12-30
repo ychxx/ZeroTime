@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_list_height"
+        android:background="@color/common_gray" >
+
+        <TextView
+            android:id="@+id/learn_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="第一天"
+            android:textSize="30dp"
+            android:textColor="@color/common_blue_deep"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/learn_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="未完成"
+            android:textSize="20dp"
+            android:textColor="@color/common_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

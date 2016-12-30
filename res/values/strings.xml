@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">零时迷子</string>
+    <string name="action_settings">Settings</string>
+    <!-- 登入页面 字体标题字体大小-->
+    <string name="login_title">零时迷子</string>
+
+
+</resources>

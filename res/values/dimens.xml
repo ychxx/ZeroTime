@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 登入页面 字体标题字体大小-->
+    <dimen name="login_title_font">35dp</dimen>
+    <dimen name="login_title_paddingTop">140dp</dimen>
+    <dimen name="login_edittext_padding">20dp</dimen>
+    <dimen name="login_edittext_height">50dp</dimen>
+    <dimen name="login_edittext_font">16dp</dimen>
+    <!-- 登入页面 小图标高宽 -->
+    <dimen name="login_icon">30dp</dimen>
+    <!-- 登入页面 按钮宽度 -->
+    <dimen name="login_button_width">120dp</dimen>
+    
+    <!-- 通用标题栏高度宽度 -->
+    <dimen name="common_title_height">50dp</dimen>
+    <!-- 通用标题栏中字体的大小 -->
+    <dimen name="common_title_size">20dp</dimen>
+    <!-- 通用内容中字体的大小 -->
+    <dimen name="common_content_size">20dp</dimen>
+    <!-- 通用标题栏中返回按钮于左边的距离 -->
+    <dimen name="common_title_left">10dp</dimen>
+    
+    <!-- 歌单高度 -->
+    <dimen name="music_list_height">60dp</dimen>
+    <!-- 歌单中歌名字体的大小 -->
+    <dimen name="music_list_name_size">18dp</dimen>
+    <!-- 歌单中歌名与顶部的距离 -->
+    <dimen name="music_list_name_top">7dp</dimen>
+    <!-- 歌单中作者字体的大小 -->
+    <dimen name="music_list_author_size">13dp</dimen>
+    <!-- 歌单中作者与上方歌名的距离 -->
+    <dimen name="music_list_author_top">10dp</dimen>
+    <!-- 歌单中更多图片与右边的距离 -->
+    <dimen name="music_list_more_right">10dp</dimen>
+    
+    <!-- 单词音乐按钮高度 -->
+    <dimen name="abc_button_height">25dp</dimen>
+    <!-- 单词音乐标题高度 -->
+    <dimen name="abc_title_height">30dp</dimen>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc_bg"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/abc_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_blue"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/abc_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="今日任务："
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/abc_title_height" />
+
+            <TextView
+                android:id="@+id/abc_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/abc_now"
+                android:text="0/233"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/abc_title_height" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/acb_below_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/abc_top_rl"
+        android:layout_centerHorizontal="true"
+        android:padding="45dp" >
+
+        <Button
+            android:id="@+id/acb_learn"
+            style="@style/abc_button"
+            android:text="学习" />
+
+        <Button
+            android:id="@+id/acb_test"
+            style="@style/abc_button"
+            android:layout_below="@id/acb_learn"
+            android:text="测试" />
+
+        <Button
+            android:id="@+id/abc_set"
+            style="@style/abc_button"
+            android:layout_below="@id/acb_test"
+            android:text="设置" />
+
+<!--         <Button
+            android:id="@+id/abc_translation"
+            style="@style/abc_button"
+            android:layout_below="@id/abc_set"
+            android:text="翻译" /> -->
+    </RelativeLayout>
+
+</LinearLayout>
